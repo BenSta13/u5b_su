@@ -18,7 +18,7 @@ echo "-------------------"
 echo
  
 apt-get update -y && dist-upgrade -y && sudo rpi-update && sudo apt-get autoremove -y
-apt-get install apache2 php5 sqlite3 php5-sqlite php5-gd imagemagick libimage-exiftool-perl git usbmount screen samba samba-common-bin rsync
+apt-get install -y apache2 php5 sqlite3 php5-sqlite php5-gd imagemagick libimage-exiftool-perl git usbmount screen rsync
 
 echo 
 echo "-----------------------"
@@ -87,23 +87,6 @@ rm -r gphoto2-temp-folder
 
 cd ~
 
-echo
-echo "-------------------"
-echo "Configuring Samba..."
-echo "-------------------"
-echo
- 
-smbpasswd -a pi
-/etc/init.d/samba restart
- 
-echo
-echo "-------------------"
-echo "Samba has been configured."
-echo "Open the /etc/samba/smb.conf file and edit the path parameter in the [Photos] section."
-echo "Restart Samba using the sudo /etc/init.d/samba restart command."
-echo "-------------------"
-echo
- 
 echo 
 echo "--------------------"
 echo "All done!"
