@@ -17,8 +17,8 @@ echo "Installing the required packages..."
 echo "-------------------"
 echo
  
-apt-get update -y && dist-upgrade -y && sudo rpi-update && sudo apt-get autoremove -y
-apt-get install -y apache2 php5 sqlite3 php5-sqlite php5-gd imagemagick libimage-exiftool-perl git usbmount screen rsync
+apt-get update -y && dist-upgrade -y && rpi-update && sudo apt-get autoremove -y
+apt-get install -y apache2 php7.0 sqlite3 php7.0-sqlite php7.0-gd imagemagick libimage-exiftool-perl usbmount screen rsync
 
 echo 
 echo "-----------------------"
