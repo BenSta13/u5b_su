@@ -17,8 +17,8 @@ echo "Installing the required packages..."
 echo "-------------------"
 echo
  
-apt-get update -y && dist-upgrade -y && sudo rpi-update && sudo apt-get autoremove -y
-apt-get install apache2 php5 sqlite3 php5-sqlite php5-gd imagemagick libimage-exiftool-perl git usbmount screen samba samba-common-bin rsync
+apt-get update -y && dist-upgrade -y && rpi-update && apt-get autoremove -y
+apt-get install apache2 php7.0 sqlite3 php7.0-sqlite php7.0-gd imagemagick libimage-exiftool-perl usbmount screen samba samba-common-bin rsync
 
 echo 
 echo "-----------------------"
@@ -27,7 +27,7 @@ echo "-----------------------"
 echo
 
 apt-get install -y libltdl-dev libusb-dev libexif-dev libpopt-dev libusb-1.0-0-dev
-apt-get install -y acl git-core screen rsync exfat-fuse exfat-utils ntfs-3g minidlna hfsutils hfsprogs
+apt-get install -y acl exfat-fuse exfat-utils ntfs-3g minidlna hfsutils hfsprogs
 
 echo 
 echo "-------------------------"
