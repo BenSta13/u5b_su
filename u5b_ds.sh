@@ -27,7 +27,7 @@ echo "-----------------------"
 echo
 
 apt-get install -y libltdl-dev libusb-dev libexif-dev libpopt-dev libusb-1.0-0-dev
-apt-get install -y acl exfat-fuse exfat-utils ntfs-3g minidlna hfsutils hfsprogs
+apt-get install -y acl exfat-fuse exfat-utils ntfs-3g minidlna hfsutils hfsprogs dnsmasq hostapd
 
 echo 
 echo "-------------------------"
