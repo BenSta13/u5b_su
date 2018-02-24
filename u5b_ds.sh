@@ -130,6 +130,19 @@ cp rpi-photo-web/ /var/www
  
 echo
 echo "-------------------"
+echo "Installing LCDisplay"
+echo "-------------------"
+echo
+
+cp /home/pi/u5b_su/LCD-show-170703.tar.gz /home/pi/LCD-show-170703.tar.gz
+tar xvf LCD-show-170703.tar.gz
+cd LCD-show/
+chmod +x LCD35-show
+./LCD35-show &
+cd ~
+ 
+echo
+echo "-------------------"
 echo "Configuring Samba..."
 echo "-------------------"
 echo
