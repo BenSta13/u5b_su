@@ -17,7 +17,7 @@ echo "Installing the required packages..."
 echo "-------------------"
 echo
  
-apt-get update -y && dist-upgrade -y && rpi-update && apt-get autoremove -y
+apt-get update -y && apt-get dist-upgrade -y && apt-get rpi-update && apt-get autoremove -y
 apt-get install apache2 php7.0 sqlite3 php7.0-sqlite php7.0-gd imagemagick libimage-exiftool-perl usbmount screen samba samba-common-bin rsync
 
 echo 
@@ -87,7 +87,7 @@ echo "-------------------------"
 echo
 
 wget http://downloads.sourceforge.net/project/gphoto/gphoto/2.5.15/gphoto2-2.5.15.tar.gz
-tar xzvf gphoto2-2.5.15.tar.gz
+sudo 
 cd gphoto2-2.5.15
 
 echo 
@@ -126,7 +126,7 @@ echo "Copying files to the /var/www directory..."
 echo "-------------------"
 echo
  
-cp rpi-photo-web/ /var/www
+cp u5b_su/ /var/www
  
 echo
 echo "-------------------"
